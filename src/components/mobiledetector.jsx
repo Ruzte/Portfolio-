@@ -38,13 +38,6 @@ export default function MobileDetector({ children }) {
             This portfolio is optimized for desktop viewing to showcase the full experience. 
             Please visit on a laptop or desktop computer for the best experience.
           </p>
-          
-          <button
-            onClick={() => setDismissed(true)}
-            className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200"
-          >
-            Continue Anyway
-          </button>
         </div>
       </div>
     );
