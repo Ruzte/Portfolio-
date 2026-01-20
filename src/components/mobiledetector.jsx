@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import mobileImage from '../assets/mobile.jpg';
 
 export default function MobileDetector({ children }) {
   const [isMobile, setIsMobile] = useState(false);
@@ -23,7 +24,7 @@ export default function MobileDetector({ children }) {
         <div className="max-w-md w-full bg-white rounded-2xl shadow-2xl p-8 text-center">
           <div className="mb-6">
             <img 
-              src="/assets/mobile.jpg" 
+              src={mobileImage} 
               alt="Desktop" 
               className="w-32 h-32 mx-auto object-cover rounded-lg"
             />
