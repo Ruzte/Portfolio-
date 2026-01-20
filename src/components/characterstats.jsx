@@ -119,7 +119,16 @@ const CharacterStats = ({ page, setPage }) => {
             </span>
 
             <div className="mt-4 text-xs sm:text-sm opacity-80">
-              <p className="font-semibold">Getmilk Pty Ltd</p>
+              <p className="font-semibold">
+                <a 
+                  href="https://www.linkedin.com/company/getmilk" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:underline hover:text-blue-400 transition-colors"
+                >
+                  Getmilk Pty Ltd
+                </a>
+              </p>
               <p>September 2025 – Present</p>
             </div>
           </div>
@@ -140,7 +149,7 @@ const CharacterStats = ({ page, setPage }) => {
               <p className="opacity-80 leading-relaxed">
                 Graduated with a B.S. in Computer Engineering, Ruzte searched far and wide
                 for new experiences and applications of his skills. With time, he will
-                become more experienced—who knows how far he can go.
+                become more experienced and knowledgeable ...who knows how far he can go.
               </p>
             </div>
 

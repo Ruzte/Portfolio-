@@ -36,7 +36,7 @@ const Projects = ({ page, setPage }) => {
           {
             title: "FINANCE TRACKER APP",
             desc:
-              "A personal desktop app built to track expenses and budgeting after getting hired.",
+              "Developed on a whim to track expenses and budgeting, it does not look appealing but it works.",
             link: "https://github.com/Ruzte/finance-tracker",
           },
         ].map((p, i) => (
