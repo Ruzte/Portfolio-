@@ -86,12 +86,12 @@ const Hero = ({ page, setPage }) => {
 
           <div className="mt-4 sm:mt-6 space-y-2 text-xs sm:text-sm md:text-sm">
             {/* Education */}
-            <div className="flex items-center gap-2">
+            <div className="flex items-center justify-center md:justify-start gap-2">
               <span>🎓 B.S Computer Engineering</span>
             </div>
 
             {/* Employment */}
-            <div className="flex items-center gap-2">
+            <div className="flex items-center justify-center md:justify-start gap-2">
               <span>🟢 Employed</span>
             </div>
 
@@ -148,7 +148,7 @@ const Hero = ({ page, setPage }) => {
         {/* Divider + Buttons */}
         <div className="absolute bottom-4 sm:bottom-8 md:bottom-12 2xl:bottom-32 left-0 w-full flex flex-col items-center">
           {/* Top Divider */}
-          <div className="w-3/4 border-t border-white/30 mb-4 sm:mb-6"></div>
+          <div className="hidden sm:block w-3/4 border-t border-white/30 mb-4 sm:mb-6"></div>
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row items-center text-xs sm:text-sm tracking-widest gap-0 w-full max-w-6xl mx-auto px-4">
