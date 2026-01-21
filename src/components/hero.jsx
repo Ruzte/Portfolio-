@@ -62,29 +62,29 @@ const Hero = ({ page, setPage }) => {
         ${page === "home" ? "translate-y-0" : "-translate-y-full"}
       `}
     >
-      <div className="max-w-6xl mx-auto w-full px-10 pt-20 2xl:pt-40 grid grid-cols-[30%_70%] gap-10 items-center">
+      <div className="max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-10 pt-10 sm:pt-16 lg:pt-20 2xl:pt-40 grid grid-cols-1 lg:grid-cols-[30%_70%] gap-4 sm:gap-6 lg:gap-10 items-center">
         
         {/* LEFT */}
-        <div className="flex justify-end rounded-full overflow-hidden">
+        <div className="flex justify-center lg:justify-end rounded-full overflow-hidden">
           <img
             src={profile}
             alt="Profile"
-            className="w-80 h-80 object-cover"
+            className="w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80 object-cover"
           />
         </div>
 
         {/* RIGHT */}
-        <div className="self-end">
-          <p className="text-lg mb-2 text-[40px]">
+        <div className="self-center lg:self-end">
+          <p className="text-base sm:text-lg lg:text-lg mb-2 text-2xl sm:text-[32px] lg:text-[40px]">
             Hello I am,
           </p>
 
-          <h1 className="text-[64px] leading-[1.05] font-bold">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl 2xl:text-[64px] leading-[1.05] font-bold">
             {text}
             <span className="animate-pulse">|</span>
           </h1>
 
-          <div className="mt-6 space-y-2 text-sm">
+          <div className="mt-4 sm:mt-6 space-y-2 text-xs sm:text-sm">
             {/* Education */}
             <div className="flex items-center gap-2">
               <span>🎓 B.S Computer Engineering</span>
@@ -96,7 +96,7 @@ const Hero = ({ page, setPage }) => {
             </div>
 
             {/* Social Icons */}
-            <div className="flex items-center gap-5 pt-2">
+            <div className="flex items-center gap-3 sm:gap-5 pt-2">
               <a
                 href="https://github.com/Ruzte"
                 target="_blank"
@@ -146,22 +146,22 @@ const Hero = ({ page, setPage }) => {
         </div>
 
         {/* Divider + Buttons */}
-        <div className="absolute bottom-12 2xl:bottom-32 left-0 w-full flex flex-col items-center">
+        <div className="absolute bottom-6 sm:bottom-8 lg:bottom-12 2xl:bottom-32 left-0 w-full flex flex-col items-center">
           {/* Top Divider */}
-          <div className="w-3/4 border-t border-white/30 mb-6"></div>
+          <div className="w-3/4 border-t border-white/30 mb-4 sm:mb-6"></div>
 
           {/* Buttons */}
-          <div className="flex items-center text-sm tracking-widest gap-8 w-full max-w-6xl mx-auto">
+          <div className="flex flex-col sm:flex-row items-center text-xs sm:text-sm tracking-widest gap-0 w-full max-w-6xl mx-auto px-4">
             <button
               onClick={() => setPage("stats")}
-              className="w-1/2 py-20 hover:text-gray-300 transition font-bold hover:bg-gray-500/10 hover:backdrop-blur-3xl"
+              className="w-full sm:w-1/2 py-4 sm:py-6 lg:py-20 hover:text-gray-300 transition font-bold hover:bg-gray-500/10 hover:backdrop-blur-3xl border-b sm:border-b-0 sm:border-r border-white/10"
             >
               CHARACTER STATS
             </button>
 
             <button
               onClick={() => setPage("projects")}
-              className="w-1/2 py-20 hover:text-gray-300 transition font-bold hover:bg-gray-500/10 hover:backdrop-blur-3xl"
+              className="w-full sm:w-1/2 py-4 sm:py-6 lg:py-20 hover:text-gray-300 transition font-bold hover:bg-gray-500/10 hover:backdrop-blur-3xl"
             >
               PROJECTS
             </button>
