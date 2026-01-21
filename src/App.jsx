@@ -14,6 +14,7 @@ function App() {
         <Projects page={page} setPage={setPage} />
       </div> 
   );
+  
 }
 
 export default App;

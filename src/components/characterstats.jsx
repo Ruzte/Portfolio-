@@ -2,6 +2,10 @@ import profile from "../assets/profile.png";
 import { Github, Linkedin, Mail, Phone, Facebook } from "lucide-react";
 import citLogo from "../assets/cit-logo.png";
 import getmilkLogo from "../assets/getmilk-logo.png";
+import WalterLogo from "../assets/intern.png";
+import AllianceLogo from "../assets/Intern-2.png";
+
+
 
 const CharacterStats = ({ page, setPage }) => {
   const calculateLevel = () => {
@@ -176,37 +180,81 @@ const CharacterStats = ({ page, setPage }) => {
           </div>
 
           {/* Column 3 */}
-          <div className="bg-[#373535]/25 p-6 space-y-6">
-            <h4 className="text-lg font-semibold">
-              ACHIEVEMENTS UNLOCKED
-            </h4>
+          <div className="flex flex-col gap-2 h-full">
 
-            {[
-              {
-                img: citLogo,
-                title: "You Made It",
-                desc: "Graduated May 2025 as a Computer Engineer",
-              },
-              {
-                img: getmilkLogo,
-                title: "Getting Started",
-                desc: "Got hired on September 2025",
-              },
-            ].map((a, i) => (
-              <div key={i} className="group relative flex items-center gap-4">
-                <img src={a.img} alt={a.title} className="w-14 h-14 rounded-md" />
-                <span className="italic text-sm opacity-80">
-                  {a.title}
-                </span>
+            {/* Card 1 - Achievements */}
+            <div className="bg-[#373535]/25 p-6 space-y-3 flex-1">
+              <h4 className="text-lg font-semibold">
+                ACHIEVEMENTS UNLOCKED
+              </h4>
 
-                <div className="absolute left-0 top-full mt-2 w-max max-w-xs bg-black/80 text-white text-xs px-3 py-2 rounded-md opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition-all duration-200 pointer-events-none z-10">
-                  {a.desc}
+              {[
+                {
+                  img: citLogo,
+                  title: "You Made It",
+                  desc: "Graduated May 2025 as a Computer Engineer",
+                },
+                {
+                  img: getmilkLogo,
+                  title: "Getting Started",
+                  desc: "Got hired on September 2025",
+                },
+              ].map((a, i) => (
+                <div key={i} className="group relative flex items-center gap-2">
+                  <img src={a.img} alt={a.title} className="w-12 h-12 rounded-md" />
+                  <span className="italic text-sm opacity-80">
+                    {a.title}
+                  </span>
+
+                  <div className="absolute left-0 top-full mt-2 w-max max-w-xs bg-black/80 text-white text-xs px-3 py-3 rounded-md opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition-all duration-200 pointer-events-none z-10">
+                    {a.desc}
+                  </div>
                 </div>
+              ))}
+            </div>
+
+            {/* Card 2 - QUESTS COMPLETED */}
+            <div className="bg-[#373535]/25 p-6 space-y-3">
+              <h4 className="text-lg font-semibold">
+                QUESTS COMPLETED
+              </h4>
+
+              <div className="grid grid-cols-4 gap-3">
+                {[
+                  {
+                    img: WalterLogo,
+                    desc: "Internship at Walter's Computer Inc. For 2 months handling hardware components and PC builds.",
+                  },
+                  {
+                    img: AllianceLogo,
+                    desc: "Internship for Alliance Software Inc. Assigned as a collaborator in a group to create an expense tracker website.",
+                  },
+                ].map((a, i) => (
+                  <div key={i} className="group relative">
+                    <img 
+                      src={a.img} 
+                      alt="Quest" 
+                      className="w-12 h-12 aspect-square rounded-md object-cover cursor-pointer hover:opacity-80 transition-opacity" 
+                    />
+
+                    <div className="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-max max-w-xs bg-black/80 text-white text-xs px-3 py-3 rounded-md opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition-all duration-200 pointer-events-none z-10">
+                      {a.desc}
+                    </div>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
           </div>
 
         </div>
+      </div>
+
+      {/* Copyright Footer */}
+      <div className="fixed bottom-0 left-0 right-0 h-10 flex items-center justify-center backdrop-blur-md bg-black/10 
+                      border-t border-white/20">
+        <p className="text-[14px]">
+          ©2026 Ruzte James Temblor. All rights reserved.
+        </p>
       </div>
     </section>
   );
