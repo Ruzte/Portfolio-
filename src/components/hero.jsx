@@ -62,19 +62,19 @@ const Hero = ({ page, setPage }) => {
         ${page === "home" ? "translate-y-0" : "-translate-y-full"}
       `}
     >
-      <div className="max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-10 pt-10 sm:pt-16 lg:pt-20 2xl:pt-40 grid grid-cols-1 lg:grid-cols-[30%_70%] gap-4 sm:gap-6 lg:gap-10 items-center">
+      <div className="max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-10 pt-10 sm:pt-16 lg:pt-20 2xl:pt-40 grid grid-cols-1 2xl:grid-cols-[30%_70%] gap-4 sm:gap-6 lg:gap-10 items-center">
         
         {/* LEFT */}
-        <div className="flex justify-center lg:justify-end rounded-full overflow-hidden">
+        <div className="flex justify-center 2xl:justify-end rounded-full overflow-hidden">
           <img
             src={profile}
             alt="Profile"
-            className="w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80 object-cover"
+            className="w-48 h-48 sm:w-64 sm:h-64 lg:w-72 2xl:w-80 2xl:h-80 object-cover"
           />
         </div>
 
         {/* RIGHT */}
-        <div className="self-center lg:self-end">
+        <div className="self-center 2xl:self-end">
           <p className="text-base sm:text-lg lg:text-lg mb-2 text-2xl sm:text-[32px] lg:text-[40px]">
             Hello I am,
           </p>
