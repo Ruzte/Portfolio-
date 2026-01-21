@@ -66,9 +66,9 @@ const Projects = ({ page, setPage }) => {
         ))}
       </div>
       {/* Copyright Footer */}
-      <div className="fixed bottom-0 left-0 right-0 h-10 flex items-center justify-center backdrop-blur-md bg-black/10 
+      <div className="static sm:fixed bottom-0 left-0 right-0 h-10 flex items-center justify-center backdrop-blur-md bg-black/10 
                       border-t border-white/20">
-        <p className="text-[14px]">
+        <p className="text-[10px] sm:text-[14px]">
           ©2026 Ruzte James Temblor. All rights reserved.
         </p>
       </div>
