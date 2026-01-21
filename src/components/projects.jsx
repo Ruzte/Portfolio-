@@ -19,7 +19,7 @@ const Projects = ({ page, setPage }) => {
         </button>
         <h3 className="text-center text-lg sm:text-2xl">PROJECTS</h3>
         <button onClick={() => setPage("home")} className="text-right hover:text-gray-300">
-          HOME →
+          HOME ⬏
         </button>
       </div>
 

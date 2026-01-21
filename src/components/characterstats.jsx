@@ -70,7 +70,7 @@ const CharacterStats = ({ page, setPage }) => {
           onClick={() => setPage("home")}
           className="text-left hover:text-gray-300"
         >
-          ← HOME
+          ⬑ HOME
         </button>
 
         <h3 className="text-center text-lg sm:text-2xl">
