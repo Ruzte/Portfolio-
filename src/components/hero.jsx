@@ -65,13 +65,13 @@ const Hero = ({ page, setPage }) => {
       <div className="max-w-6xl mx-auto w-full px-10 pt-20 2xl:pt-40 grid grid-cols-[30%_70%] gap-10 items-center">
         
         {/* LEFT */}
-        <div className="flex justify-end rounded-full overflow-hidden">
-          <img
-            src={profile}
-            alt="Profile"
-            className="w-80 h-80 object-cover"
-          />
-        </div>
+        <div className="flex justify-end overflow-hidden">
+        <img
+          src={profile}
+          alt="Profile"
+          className="w-48 h-48 md:w-80 md:h-80 object-cover rounded-full"
+        />
+      </div>
 
         {/* RIGHT */}
         <div className="self-end">
@@ -148,7 +148,7 @@ const Hero = ({ page, setPage }) => {
         {/* Divider + Buttons */}
         <div className="absolute bottom-12 2xl:bottom-32 left-0 w-full flex flex-col items-center">
           {/* Top Divider */}
-          <div className="w-3/4 border-t border-white/30 mb-6"></div>
+          <div className="hidden md:block w-3/4 border-t border-white/30 mb-6"></div>
 
           {/* Buttons */}
           <div className="flex items-center text-sm tracking-widest gap-8 w-full max-w-6xl mx-auto">

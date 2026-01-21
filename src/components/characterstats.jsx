@@ -51,7 +51,7 @@ const CharacterStats = ({ page, setPage }) => {
   return (
     <section
       className={`
-        absolute inset-0 text-white
+        absolute inset-0 text-white overflow-y-auto
         ${page === "stats" ? "z-20" : "z-0"}
         bg-[linear-gradient(to_bottom,#071512_0%,#430B19_50%,#810020_100%)]
         transition-transform duration-700 ease-in-out
