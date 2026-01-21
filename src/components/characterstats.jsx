@@ -2,7 +2,7 @@ import profile from "../assets/profile.png";
 import { Github, Linkedin, Mail, Phone, Facebook } from "lucide-react";
 import citLogo from "../assets/cit-logo.png";
 import getmilkLogo from "../assets/getmilk-logo.png";
-import WalterLogo from "../assets/intern.png";
+import WalterLogo from "../assets/Intern.png";
 import AllianceLogo from "../assets/Intern-2.png";
 
 
