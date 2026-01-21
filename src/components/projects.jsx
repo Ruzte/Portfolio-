@@ -2,7 +2,7 @@ const Projects = ({ page, setPage }) => {
   return (
     <section
       className={`
-        absolute inset-0 text-white
+        absolute inset-0 text-white overflow-y-auto
         ${page === "projects" ? "z-20" : "z-0"}
         bg-[linear-gradient(to_bottom,#071512_0%,#430B19_50%,#810020_100%)]
         transition-transform duration-700
@@ -25,7 +25,7 @@ const Projects = ({ page, setPage }) => {
 
       <div className="w-11/12 mx-auto border-t border-white/30 2xl:pt-32" />
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-10 py-8 space-y-6 overflow-y-auto">
+      <div className="max-w-6xl mx-auto px-4 sm:px-10 py-8 space-y-6">
         {[
           {
             title: "INVENTORY MANAGEMENT SYSTEM APP",
