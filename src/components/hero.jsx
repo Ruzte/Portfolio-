@@ -76,7 +76,7 @@ const Hero = ({ page, setPage }) => {
         {/* RIGHT */}
         <div className="self-center md:self-end text-center md:text-left">
           <p className="text-base sm:text-lg md:text-lg mb-2 text-2xl sm:text-3xl md:text-[40px]">
-            Hello I am,
+            Greetings! Meet
           </p>
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-[1.05] font-bold">
@@ -87,12 +87,17 @@ const Hero = ({ page, setPage }) => {
           <div className="mt-4 sm:mt-6 space-y-2 text-xs sm:text-sm md:text-sm">
             {/* Education */}
             <div className="flex items-center justify-center md:justify-start gap-2">
-              <span>🎓 B.S Computer Engineering</span>
+              <span>⚔️ Class: Computer Engineer</span>
             </div>
 
             {/* Employment */}
             <div className="flex items-center justify-center md:justify-start gap-2">
-              <span>🟢 Employed</span>
+              <span>🟢 Status: Employed</span>
+            </div>
+
+            {/* Work */}
+            <div className="flex items-center justify-center md:justify-start gap-2">
+              <span>🎯 Faction: Getmilk Pty Ltd</span>
             </div>
 
             {/* Social Icons */}
@@ -163,7 +168,7 @@ const Hero = ({ page, setPage }) => {
               onClick={() => setPage("projects")}
               className="w-full sm:w-1/2 py-3 sm:py-6 md:py-20 hover:text-gray-300 transition font-bold hover:bg-gray-500/10 hover:backdrop-blur-3xl"
             >
-              PROJECTS
+              COMPLETED QUESTS
             </button>
           </div>
         </div>

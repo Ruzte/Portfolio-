@@ -18,7 +18,7 @@ const Projects = ({ page, setPage }) => {
         <button onClick={() => setPage("stats")} className="text-left hover:text-gray-300">
           ← CHARACTER STATS
         </button>
-        <h3 className="text-center text-lg sm:text-2xl">PROJECTS</h3>
+        <h3 className="text-center text-lg sm:text-2xl">COMPLETED QUESTS</h3>
         <button onClick={() => setPage("home")} className="text-right hover:text-gray-300">
           HOME ⬏
         </button>
@@ -60,7 +60,7 @@ const Projects = ({ page, setPage }) => {
             </div>
 
             <a href={p.link} target="_blank" className="inline-block px-5 py-2 bg-white/10 hover:bg-white/20 rounded">
-              View Project →
+              Inspect →
             </a>
           </div>
         ))}

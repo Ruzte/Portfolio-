@@ -85,7 +85,7 @@ const CharacterStats = ({ page, setPage }) => {
           onClick={() => setPage("projects")}
           className="text-right hover:text-gray-300"
         >
-          PROJECTS →
+          COMPLETED QUESTS  →
         </button>
       </div>
 
@@ -93,7 +93,7 @@ const CharacterStats = ({ page, setPage }) => {
 
       {/* Content */}
       <div className="max-w-6xl mx-auto px-4 sm:px-10 py-10 2xl:pt-40">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 2xl:gap-20">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 2xl:gap-5">
 
           {/* Column 1 */}
           <div className="flex flex-col items-center text-center">
@@ -119,10 +119,11 @@ const CharacterStats = ({ page, setPage }) => {
             </div>
 
             <span className="text-xs sm:text-sm uppercase opacity-80 pt-2">
-              Lvl {level} Employed
+              Lvl {level} Web Developer
             </span>
 
             <div className="mt-4 text-xs sm:text-sm opacity-80">
+              <p className=" opacity-70 ">Faction</p>
               <p className="font-semibold">
                 <a 
                   href="https://www.linkedin.com/company/getmilk" 
@@ -133,24 +134,24 @@ const CharacterStats = ({ page, setPage }) => {
                   Getmilk Pty Ltd
                 </a>
               </p>
-              <p>September 2025 – Present</p>
             </div>
+            
             <div>
-              <h4 className="tracking-widest opacity-70 mb-2">Channels</h4>
-              <div className="flex items-center gap-5 pt-2">
-                <a href="https://github.com/Ruzte" target="_blank" rel="noopener noreferrer">
+              <h4 className=" opacity-70 mb-1 mt-4 pt-2 text-xs sm:text-sm">Summon Me</h4>
+              <div className="flex items-center gap-4 ">
+                <a href="https://github.com/Ruzte" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition">
                   <Github size={20} />
                 </a>
-                <a href="https://www.linkedin.com/in/ruzte-temblor-073a952b2/" target="_blank">
+                <a href="https://www.linkedin.com/in/ruzte-temblor-073a952b2/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300 transition">
                   <Linkedin size={20} />
                 </a>
-                <a href="mailto:ruztejames.temblor@gmail.com">
+                <a href="mailto:ruztejames.temblor@gmail.com" rel="noopener noreferrer" className="hover:text-red-300 transition">
                   <Mail size={20} />
                 </a>
-                <a href="tel:09683252543">
+                <a href="tel:09683252543" className="hover:text-green-300 transition">
                   <Phone size={20} />
                 </a>
-                <a href="https://www.facebook.com/RJ.Temblor28" target="_blank">
+                <a href="https://www.facebook.com/RJ.Temblor28" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition">
                   <Facebook size={20} />
                 </a>
               </div>
@@ -170,14 +171,26 @@ const CharacterStats = ({ page, setPage }) => {
 
             <div>
               <h4 className="tracking-widest opacity-70 mb-1">Lore:</h4>
-              <p className="opacity-80 leading-relaxed">
+              {<p className="opacity-80 leading-relaxed">
                 Graduated with a B.S. in Computer Engineering, Ruzte searched far and wide
                 for new experiences and applications of his skills. With time, he will
                 become more experienced and knowledgeable ...who knows how far he can go.
-              </p>
+              </p>}
             </div>
 
-            
+            <div>
+            <h4 className="tracking-widest opacity-70 mb-1 mt-10">Abilities:</h4>
+            <div className="flex flex-wrap gap-2 pt-2">
+              {["JavaScript", "React", "MongoDB", "Tailwind", "Electron", "Wordpress", "CSS", "Yootheme", ].map((skill, idx) => (
+                <span 
+                  key={idx} 
+                  className="px-3 py-1 bg-white/10 text-xs rounded-full"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
           </div>
 
           {/* Column 3 */}
@@ -214,10 +227,10 @@ const CharacterStats = ({ page, setPage }) => {
               ))}
             </div>
 
-            {/* Card 2 - QUESTS COMPLETED */}
+            {/* Card 2 - SIDE QUEST */}
             <div className="bg-[#373535]/25 p-6 space-y-3">
               <h4 className="text-lg font-semibold">
-                QUESTS COMPLETED
+                SIDE QUEST
               </h4>
 
               <div className="grid grid-cols-4 gap-3">
