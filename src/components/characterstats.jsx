@@ -135,6 +135,26 @@ const CharacterStats = ({ page, setPage }) => {
               </p>
               <p>September 2025 – Present</p>
             </div>
+            <div>
+              <h4 className="tracking-widest opacity-70 mb-2">Channels</h4>
+              <div className="flex items-center gap-5 pt-2">
+                <a href="https://github.com/Ruzte" target="_blank" rel="noopener noreferrer">
+                  <Github size={20} />
+                </a>
+                <a href="https://www.linkedin.com/in/ruzte-temblor-073a952b2/" target="_blank">
+                  <Linkedin size={20} />
+                </a>
+                <a href="mailto:ruztejames.temblor@gmail.com">
+                  <Mail size={20} />
+                </a>
+                <a href="tel:09683252543">
+                  <Phone size={20} />
+                </a>
+                <a href="https://www.facebook.com/RJ.Temblor28" target="_blank">
+                  <Facebook size={20} />
+                </a>
+              </div>
+            </div>
           </div>
 
           {/* Column 2 */}
@@ -157,26 +177,7 @@ const CharacterStats = ({ page, setPage }) => {
               </p>
             </div>
 
-            <div>
-              <h4 className="tracking-widest opacity-70 mb-2">Channels</h4>
-              <div className="flex items-center gap-5 pt-2">
-                <a href="https://github.com/Ruzte" target="_blank" rel="noopener noreferrer">
-                  <Github size={20} />
-                </a>
-                <a href="https://www.linkedin.com/in/ruzte-temblor-073a952b2/" target="_blank">
-                  <Linkedin size={20} />
-                </a>
-                <a href="mailto:ruztejames.temblor@gmail.com">
-                  <Mail size={20} />
-                </a>
-                <a href="tel:09683252543">
-                  <Phone size={20} />
-                </a>
-                <a href="https://www.facebook.com/RJ.Temblor28" target="_blank">
-                  <Facebook size={20} />
-                </a>
-              </div>
-            </div>
+            
           </div>
 
           {/* Column 3 */}
@@ -249,13 +250,14 @@ const CharacterStats = ({ page, setPage }) => {
         </div>
       </div>
 
-      {/* Copyright Footer */}
+      {/* Copyright Footer 
       <div className="static sm:fixed bottom-0 left-0 right-0 h-10 flex items-center justify-center backdrop-blur-md bg-black/10 
                       border-t border-white/20">
         <p className="text-[10px] sm:text-[14px]">
           ©2026 Ruzte James Temblor. All rights reserved.
         </p>
       </div>
+      */}
     </section>
   );
 };
