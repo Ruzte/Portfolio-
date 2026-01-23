@@ -1,6 +1,7 @@
 import profile from "../assets/profile.png";
 import { Github, Linkedin, Mail, Phone, Facebook } from "lucide-react";
 import citLogo from "../assets/cit-logo.png";
+import sfasLogo from "../assets/sfas.png";
 import getmilkLogo from "../assets/getmilk-logo.png";
 import WalterLogo from "../assets/Intern.png";
 import AllianceLogo from "../assets/Intern-2.png";
@@ -203,14 +204,19 @@ const CharacterStats = ({ page, setPage }) => {
 
               {[
                 {
+                  img: sfasLogo,
+                  title: "Baby Steps",
+                  desc: "Attended Saint Francis of Assisi School for the whole basic education journey graduating in March 2019.",
+                },
+                {
                   img: citLogo,
                   title: "You Made It",
-                  desc: "Graduated May 2025 as a Computer Engineer",
+                  desc: "Graduated May 2025 with a degree in Computer Engineer at Cebu Institute of Technology - University.",
                 },
                 {
                   img: getmilkLogo,
                   title: "Getting Started",
-                  desc: "Got hired on September 2025",
+                  desc: "Got hired on September 2025 as a Web Developer at Getmilk Pty Ltd.",
                 },
               ].map((a, i) => (
                 <div key={i} className="group relative flex items-center gap-2">

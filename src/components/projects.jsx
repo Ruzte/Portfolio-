@@ -30,14 +30,16 @@ const Projects = ({ page, setPage }) => {
       <div className="max-w-6xl mx-auto px-4 sm:px-10 py-8 space-y-6">
         {[
           {
-            title: "INVENTORY MANAGEMENT SYSTEM APP",
+            title: "INVENTORY MANAGEMENT SYSTEM ",
+            category: "🖥️ Desktop Application",
             desc:
               "Designed and developed a commissioned Inventory Management System using React, Vite, Tailwind, MongoDB, and Electron.",
             languages: ["React", "Vite", "Tailwind", "MongoDB", "Electron"],
             link: "https://github.com/Ruzte/Inventory-System",
           },
           {
-            title: "FINANCE TRACKER APP",
+            title: "FINANCE TRACKER ",
+            category: "🖥️ Desktop Application",
             desc:
               "Developed on a whim to track expenses and budgeting, it does not look appealing but it works.",
             languages: ["React", "Vite", "HTML", "Electron"],
@@ -45,6 +47,13 @@ const Projects = ({ page, setPage }) => {
           },
         ].map((p, i) => (
           <div key={i} className="bg-[#373535]/25 p-6 rounded">
+            {/* Category Badge */}
+            <div className="mb-2">
+              <span className="text-xs tracking-widest uppercase">
+                Item Class: {p.category}
+              </span>
+            </div>
+            
             <h3 className="text-xl font-bold mb-3">{p.title}</h3>
             <p className="text-sm opacity-80 mb-4">{p.desc}</p>
             
