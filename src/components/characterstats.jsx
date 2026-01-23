@@ -23,22 +23,21 @@ const CharacterStats = ({ page, setPage }) => {
   };
 
   const calculateXPProgress = () => {
-    const birthDate = new Date("2002-08-28");
     const today = new Date();
     const currentYear = today.getFullYear();
+    
+    // August is month 7 (0-indexed)
+    const birthdayThisYear = new Date(currentYear, 7, 28);
+    const hasBirthdayPassed = today >= birthdayThisYear;
 
     const lastBirthday = new Date(
-      today >= new Date(currentYear, 7, 28)
-        ? currentYear
-        : currentYear - 1,
+      hasBirthdayPassed ? currentYear : currentYear - 1,
       7,
       28
     );
 
     const nextBirthday = new Date(
-      today >= new Date(currentYear, 7, 28)
-        ? currentYear + 1
-        : currentYear,
+      hasBirthdayPassed ? currentYear + 1 : currentYear,
       7,
       28
     );
