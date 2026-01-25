@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { Github, Linkedin, Mail, Phone, Facebook } from "lucide-react";
 import profile from "../assets/profile.png";
-import { Analytics } from "@vercel/analytics/next"
 
 const titles = [
   "Ruzte James Temblor",
@@ -175,7 +174,6 @@ const Hero = ({ page, setPage }) => {
           </div>
         </div>
       </div>
-      <Analytics />
     </section>
   );
 };
