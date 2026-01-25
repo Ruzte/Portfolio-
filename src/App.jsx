@@ -2,7 +2,6 @@ import { useState } from "react";
 import Hero from "./components/hero";
 import CharacterStats from "./components/characterstats";
 import Projects from "./components/projects";
-import { Analytics } from "@vercel/analytics/next"
 
 
 function App() {
@@ -13,7 +12,6 @@ function App() {
         <Hero page={page} setPage={setPage} />
         <CharacterStats page={page} setPage={setPage} />
         <Projects page={page} setPage={setPage} />
-        <Analytics />
       </div> 
   );
   
