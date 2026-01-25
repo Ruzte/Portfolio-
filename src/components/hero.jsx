@@ -7,6 +7,7 @@ const titles = [
   "Ruzte James Temblor",
   "A Computer Engineer",
   "A Web Developer",
+  "A Tech Enthusiast",
 ];
 
 const Hero = ({ page, setPage }) => {
