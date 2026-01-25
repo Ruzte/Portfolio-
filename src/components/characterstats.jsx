@@ -137,7 +137,7 @@ const CharacterStats = ({ page, setPage }) => {
             </div>
             
             <div>
-              <h4 className=" opacity-70 mb-1 mt-4 pt-2 text-xs sm:text-sm">Summon Me</h4>
+              <h4 className=" opacity-70 mb-1 mt-4 pt-2 text-xs sm:text-sm">Summon Links</h4>
               <div className="flex items-center gap-4 ">
                 <a href="https://github.com/Ruzte" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition">
                   <Github size={20} />
